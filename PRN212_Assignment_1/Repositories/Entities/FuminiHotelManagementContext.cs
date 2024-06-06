@@ -24,6 +24,24 @@ public partial class FuminiHotelManagementContext : DbContext
 
     public virtual DbSet<RoomType> RoomTypes { get; set; }
 
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    => optionsBuilder.UseSqlServer(GetConnectionString());
+
+    public AdminConfig Admin { get; set; } = GetAdminConfig();
+
+    private static AdminConfig GetAdminConfig()
+    {
+        IConfiguration configuration = new ConfigurationBuilder()
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+            .Build();
+
+        AdminConfig adminConfig = new AdminConfig();
+        configuration.GetSection("Admin").Bind(adminConfig);
+
+        return adminConfig;
+    }
+
     private string? GetConnectionString()
     {
         IConfiguration configuration = new ConfigurationBuilder()
@@ -32,9 +50,6 @@ public partial class FuminiHotelManagementContext : DbContext
                 .Build();
         return configuration["ConnectionStrings:DefaultConnection"];
     }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer(GetConnectionString());
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

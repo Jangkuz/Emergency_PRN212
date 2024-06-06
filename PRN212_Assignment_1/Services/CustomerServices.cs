@@ -16,5 +16,10 @@ namespace Services
         {
             return _repo.GetAllCustomers();
         }
+
+        public Customer? CheckLogin(string email, string password)
+        {
+            return _repo.GetAccount(email, password);
+        }
     }
 }

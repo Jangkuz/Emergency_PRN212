@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JeY8wHEXiv1YHTgenNPGxH2HPfBUtc5UXwRWN1g801xoBRwaaWr1Il1l+hV7VaauEyQ3IX8EdUlkHT1q+i53vg==",
+  "dgSpecHash": "DLj+YTLx5ejOQ0V5OlgX2WNVetsKufOg9X2pXtXN2HHnGakZ9JwOH/PpA81nb7U3UbYBDs4sauaA3BHadpqFig==",
   "success": true,
   "projectFilePath": "D:\\FPTU\\2024_2_Summer\\PRN_211_Subject\\Assignment\\99_Assingment_1\\PRN212_Assignment_1\\Services\\Services.csproj",
   "expectedPackageFiles": [
@@ -19,6 +19,7 @@
     "C:\\Users\\HP EliteBook\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
     "C:\\Users\\HP EliteBook\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\HP EliteBook\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\HP EliteBook\\.nuget\\packages\\microsoft.extensions.configuration.binder\\8.0.1\\microsoft.extensions.configuration.binder.8.0.1.nupkg.sha512",
     "C:\\Users\\HP EliteBook\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\8.0.0\\microsoft.extensions.configuration.fileextensions.8.0.0.nupkg.sha512",
     "C:\\Users\\HP EliteBook\\.nuget\\packages\\microsoft.extensions.configuration.json\\8.0.0\\microsoft.extensions.configuration.json.8.0.0.nupkg.sha512",
     "C:\\Users\\HP EliteBook\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",

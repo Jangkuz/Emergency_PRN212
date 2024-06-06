@@ -60,11 +60,9 @@ D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignme
 D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\WPF\bin\Debug\net8.0-windows\Services.pdb
 D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\WPF\bin\Debug\net8.0-windows\Repositories.pdb
 D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\WPF\obj\Debug\net8.0-windows\AnhdlSE181818WPF.csproj.AssemblyReference.cache
-D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\WPF\obj\Debug\net8.0-windows\MainWindow.g.cs
 D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\WPF\obj\Debug\net8.0-windows\App.g.cs
 D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\WPF\obj\Debug\net8.0-windows\AnhdlSE181818WPF_MarkupCompile.cache
 D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\WPF\obj\Debug\net8.0-windows\AnhdlSE181818WPF_MarkupCompile.lref
-D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\WPF\obj\Debug\net8.0-windows\MainWindow.baml
 D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\WPF\obj\Debug\net8.0-windows\AnhdlSE181818WPF.g.resources
 D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\WPF\obj\Debug\net8.0-windows\AnhdlSE181818WPF.GeneratedMSBuildEditorConfig.editorconfig
 D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\WPF\obj\Debug\net8.0-windows\AnhdlSE181818WPF.AssemblyInfoInputs.cache
@@ -77,3 +75,11 @@ D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignme
 D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\WPF\obj\Debug\net8.0-windows\AnhdlSE181818WPF.genruntimeconfig.cache
 D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\WPF\obj\Debug\net8.0-windows\ref\AnhdlSE181818WPF.dll
 D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\WPF\bin\Debug\net8.0-windows\appsettings.json
+D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\WPF\obj\Debug\net8.0-windows\AnhdlSE181818WPF.sourcelink.json
+D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\WPF\obj\Debug\net8.0-windows\Login.g.cs
+D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\WPF\obj\Debug\net8.0-windows\Login.baml
+D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Binder.dll
+D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\WPF\obj\Debug\net8.0-windows\AdminMain.g.cs
+D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\WPF\obj\Debug\net8.0-windows\CustomerMain.g.cs
+D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\WPF\obj\Debug\net8.0-windows\AdminMain.baml
+D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\WPF\obj\Debug\net8.0-windows\CustomerMain.baml

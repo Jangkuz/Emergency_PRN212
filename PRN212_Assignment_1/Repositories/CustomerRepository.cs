@@ -16,5 +16,11 @@ namespace Repositories
             _dbContext = new();
             return _dbContext.Customers.ToList();
         }
+
+        public Customer? GetAccount(string email, string password)
+        {
+            _dbContext = new();
+            return _dbContext.Customers.FirstOrDefault(x => x.EmailAddress == email && x.Password == password);
+        }
     }
 }
