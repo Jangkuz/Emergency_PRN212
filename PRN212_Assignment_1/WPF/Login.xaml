@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AnhdlSE181818WPF"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
-    <Grid x:Name="winLogin">
+        Title="Window1" Height="450" Width="800"
+        WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid x:Name="winLogin" MouseDown="winLogin_MouseDown">
         <Grid.Background>
             <SolidColorBrush Color="Red" Opacity="0.89"/>
         </Grid.Background>
@@ -15,6 +16,7 @@
         <Label x:Name="lblEmail" Content="Email" Height="32" Margin="286,140,435,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFFFEA00"/>
         <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="32" Margin="379,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" VerticalContentAlignment="Center"/>
         <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="32" Margin="379,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" VerticalContentAlignment="Center"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Height="52" Margin="463,321,0,0" VerticalAlignment="Top" Width="108" Background="#FFE6FF00" FontWeight="Bold" Click="btnManageCustomer_Click"/>
 
     </Grid>
 </Window>

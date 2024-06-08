@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="AdminMain" Height="450" Width="800">
     <Grid>
-        
+        <Grid.Background>
+            <SolidColorBrush Color="Red" Opacity="0.89"/>
+        </Grid.Background>
+        <Label x:Name="lblAdmin" Content="Admin" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Background="#FFFDFF00" Margin="143,33,0,0" Width="535" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="btnManageCustomer" Content="Manage Customer" HorizontalAlignment="Left" Height="49" Margin="101,151,0,0" VerticalAlignment="Top" Width="134" Background="#FFE6FF00" FontWeight="Bold" Click="btnManageCustomer_Click"/>
+        <Button x:Name="btnManageRoom" Content="Manage Room" HorizontalAlignment="Left" Height="49" Margin="344,151,0,0" VerticalAlignment="Top" Width="134" Background="#FFE6FF00" FontWeight="Bold" Click="btnManageRoom_Click"/>
+        <Button x:Name="btnCreateReport" Content="Create Report" HorizontalAlignment="Left" Height="49" Margin="575,151,0,0" VerticalAlignment="Top" Width="134" Background="#FFE6FF00" FontWeight="Bold" Click="btnCreateReport_Click"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Height="52" Margin="601,295,0,0" VerticalAlignment="Top" Width="108" Background="#FFE6FF00" FontWeight="Bold" Click="btnExit_Click"/>
+
     </Grid>
 </Window>

@@ -23,5 +23,11 @@ namespace AnhdlSE181818WPF
         {
             InitializeComponent();
         }
+
+        private void btnManageCustomer_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown();
+
+        }
     }
 }

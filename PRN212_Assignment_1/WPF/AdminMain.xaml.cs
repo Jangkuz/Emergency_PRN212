@@ -23,5 +23,27 @@ namespace AnhdlSE181818WPF
         {
             InitializeComponent();
         }
+
+        private void btnManageCustomer_Click(object sender, RoutedEventArgs e)
+        {
+            AdminManageCustomer win = new();
+            win.ShowDialog();
+        }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown();
+
+        }
+
+        private void btnManageRoom_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnCreateReport_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

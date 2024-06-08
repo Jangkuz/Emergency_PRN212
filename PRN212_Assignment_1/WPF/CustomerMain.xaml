@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="CustomerMain" Height="450" Width="800">
     <Grid>
-        
+        <Grid.Background>
+            <SolidColorBrush Color="Red" Opacity="0.89"/>
+        </Grid.Background>
+        <Label x:Name="lblAdmin" Content="Customer" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Background="#FFFDFF00" Margin="143,33,0,0" Width="535" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="btnManageProfile" Content="Manage Profile" HorizontalAlignment="Left" Height="49" Margin="101,151,0,0" VerticalAlignment="Top" Width="270" Background="#FFE6FF00" FontWeight="Bold" Click="btnManageCustomer_Click"/>
+        <Button x:Name="btnViewBooking" Content="View booking reservation history" HorizontalAlignment="Left" Height="49" Margin="459,151,0,0" VerticalAlignment="Top" Width="270" Background="#FFE6FF00" FontWeight="Bold"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Height="52" Margin="621,282,0,0" VerticalAlignment="Top" Width="108" Background="#FFE6FF00" FontWeight="Bold" Click="btnManageCustomer_Click"/>
     </Grid>
 </Window>

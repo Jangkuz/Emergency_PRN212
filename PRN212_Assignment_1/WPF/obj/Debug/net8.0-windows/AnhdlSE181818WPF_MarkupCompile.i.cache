@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\WPF\App.xaml
-3-861397455
+41627279210
 
-8-229342426
+9-1134213101
 247-1100928145
-AdminMain.xaml;CustomerMain.xaml;Login.xaml;
+AdminMain.xaml;AdminManageCustomer.xaml;CustomerMain.xaml;Login.xaml;
 
-True
+False
 

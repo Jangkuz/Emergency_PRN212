@@ -8,9 +8,9 @@ D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignme
 D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
 D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
 D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\Services\obj\Debug\net8.0\Services.sourcelink.json
 D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\Services\obj\Debug\net8.0\Services.csproj.Up2Date
 D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\Services\obj\Debug\net8.0\Services.dll
 D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\Services\obj\Debug\net8.0\refint\Services.dll
 D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\Services\obj\Debug\net8.0\Services.pdb
 D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\Services\obj\Debug\net8.0\ref\Services.dll
-D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\Services\obj\Debug\net8.0\Services.sourcelink.json

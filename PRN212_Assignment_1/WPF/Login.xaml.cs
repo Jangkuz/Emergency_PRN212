@@ -62,5 +62,18 @@ namespace AnhdlSE181818WPF
                 this.Hide();
             }//end customer login
         }
+
+        private void btnManageCustomer_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown();
+        }
+
+        private void winLogin_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
+        }
     }
 }
