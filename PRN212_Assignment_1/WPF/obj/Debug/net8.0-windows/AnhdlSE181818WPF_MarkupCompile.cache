@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\FPTU\2024_2_Summer\PRN_211_Subject\Assignment\99_Assingment_1\PRN212_Assignment_1\WPF\App.xaml
-41627279210
+7-1910319646
 
-7-1107132856
+7-339993912
 247-1100928145
-AdminMain.xaml;AdminManageCustomer.xaml;CustomerMain.xaml;Login.xaml;
+Admin_screen\AdminMain.xaml;Admin_screen\AdminManageCustomer.xaml;Customer_screen\CustomerMain.xaml;Login.xaml;Resources\ButtonStyles.xaml;Resources\MylabelStyles.xaml;Resources\WindowStyles.xaml;
 
 False
 

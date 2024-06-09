@@ -30,13 +30,13 @@ namespace AnhdlSE181818WPF
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
             //validation
-            if (string.IsNullOrEmpty(txtEmail.Text) || string.IsNullOrEmpty(txtPassword.Text))
+            if (string.IsNullOrEmpty(txtEmail.Text) || string.IsNullOrEmpty(txtPassword.Password))
             {
                 System.Windows.Forms.MessageBox.Show("Pleae input both email & password", "Input plz.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             AdminService adminSer = new();
-            if (adminSer.CheckLogin(txtEmail.Text, txtPassword.Text))
+            if (adminSer.CheckLogin(txtEmail.Text, txtPassword.Password))
             {
                 AdminMain adM = new();
                 adM.Show();
@@ -45,7 +45,7 @@ namespace AnhdlSE181818WPF
             else
             {
                 CustomerServices cusService = new();
-                Customer? cus = cusService.CheckLogin(txtEmail.Text, txtPassword.Text);
+                Customer? cus = cusService.CheckLogin(txtEmail.Text, txtPassword.Password);
                 if (cus == null)
                 {
                     System.Windows.Forms.MessageBox.Show("Login failed. Check the email and password again!", "Wrong credentials", MessageBoxButtons.OK, MessageBoxIcon.Error);

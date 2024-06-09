@@ -7,13 +7,13 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="AdminMain.xaml.cs">
+    <Compile Update="Admin_screen\AdminMain.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="AdminManageCustomer.xaml.cs">
+    <Compile Update="Admin_screen\AdminManageCustomer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="CustomerMain.xaml.cs">
+    <Compile Update="Customer_screen\CustomerMain.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Login.xaml.cs">
@@ -21,16 +21,25 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="AdminMain.xaml">
+    <Page Update="Admin_screen\AdminMain.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="AdminManageCustomer.xaml">
+    <Page Update="Admin_screen\AdminManageCustomer.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="CustomerMain.xaml">
+    <Page Update="Customer_screen\CustomerMain.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\ButtonStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\MylabelStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\WindowStyles.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
