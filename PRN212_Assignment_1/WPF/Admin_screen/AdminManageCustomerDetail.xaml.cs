@@ -23,5 +23,6 @@ namespace AnhdlSE181818WPF.Admin_screen
         {
             InitializeComponent();
         }
+
     }
 }
