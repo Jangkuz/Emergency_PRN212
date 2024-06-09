@@ -67,7 +67,8 @@
                 Margin="646,206,0,0"
                 VerticalAlignment="Top"
                 Width="134"
-                FontWeight="Bold" />
+                FontWeight="Bold"
+                Click="btnCreate_Click" />
         <Button Style="{StaticResource MyButtonStyle}"
                 x:Name="btnUpdate"
                 Content="Update"
@@ -76,7 +77,8 @@
                 Margin="646,285,0,0"
                 VerticalAlignment="Top"
                 Width="134"
-                FontWeight="Bold" />
+                FontWeight="Bold"
+                Click="btnUpdate_Click" />
         <Button Style="{StaticResource MyButtonStyle}"
                 x:Name="btnDelete"
                 Content="Delete"

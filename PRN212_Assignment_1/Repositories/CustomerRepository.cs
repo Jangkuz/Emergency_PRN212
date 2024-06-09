@@ -30,5 +30,25 @@ namespace Repositories
             _dbContext.SaveChanges();
             return customer;
         }
+
+        public Customer UpdateCustomer(Customer customer)
+        {
+            _dbContext = new();
+            //var cus = _dbContext.Customers.FirstOrDefault(x => x.CustomerId == customer.CustomerId);
+            //if (cus != null)
+            //{
+                _dbContext.Customers.Update(customer);
+                _dbContext.SaveChanges();
+            //}
+            return customer;
+        }
+
+        public Customer CreateCustomer(Customer customer)
+        {
+            _dbContext = new();
+            _dbContext.Customers.Add(customer);
+            _dbContext.SaveChanges();
+            return customer;
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Repositories.Entities;
+﻿using AnhdlSE181818WPF.Admin_screen;
+using Repositories.Entities;
 using Services;
 using System;
 using System.Collections.Generic;
@@ -84,6 +85,30 @@ namespace AnhdlSE181818WPF
             FillDataGrid();
 
             _selected = null;
+        }
+
+        private void btnCreate_Click(object sender, RoutedEventArgs e)
+        {
+            AdminManageCustomerDetail w = new();
+            w.ShowDialog();
+
+            FillDataGrid();
+        }
+
+        private void btnUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            if(_selected != null)
+            {
+                AdminManageCustomerDetail w = new();
+                w.SelectedBook = _selected;
+
+                w.ShowDialog();
+                FillDataGrid();
+            }
+            else
+            {
+                System.Windows.MessageBox.Show("Please select a certain customer to edit!", "Select on customer", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
         }
     }
 }
