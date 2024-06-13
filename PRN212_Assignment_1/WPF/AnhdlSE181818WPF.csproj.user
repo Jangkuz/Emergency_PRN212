@@ -7,13 +7,34 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Admin_screen\AdminCreateReport.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Admin_screen\AdminMain.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Admin_screen\AdminManageCustomer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Admin_screen\AdminManageCustomerDetail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Admin_screen\AdminManageRoom.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Admin_screen\AdminManageRoomDetail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Customer_screen\CustomerBookRoom.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Customer_screen\CustomerMain.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Customer_screen\CustomerManageProfile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Customer_screen\CustomerViewBookingReservation.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Login.xaml.cs">
@@ -21,13 +42,34 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Admin_screen\AdminCreateReport.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Admin_screen\AdminMain.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Admin_screen\AdminManageCustomer.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Admin_screen\AdminManageCustomerDetail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Admin_screen\AdminManageRoom.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Admin_screen\AdminManageRoomDetail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Customer_screen\CustomerBookRoom.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Customer_screen\CustomerMain.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Customer_screen\CustomerManageProfile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Customer_screen\CustomerViewBookingReservation.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Login.xaml">

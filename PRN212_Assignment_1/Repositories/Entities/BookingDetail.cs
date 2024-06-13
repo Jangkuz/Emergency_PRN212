@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Repositories.Entities;
+﻿namespace Repositories.Entities;
 
 public partial class BookingDetail
 {
@@ -13,7 +10,7 @@ public partial class BookingDetail
 
     public DateOnly EndDate { get; set; }
 
-    public decimal? ActualPrice { get; set; }
+    public decimal? ActualPrice { get; set; } 
 
     public virtual BookingReservation BookingReservation { get; set; } = null!;
 

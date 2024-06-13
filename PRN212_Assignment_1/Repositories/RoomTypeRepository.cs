@@ -1,15 +1,23 @@
 ﻿using Repositories.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Repositories
 {
     public class RoomTypeRepository
     {
-        private FuminiHotelManagementContext _dbContext;
+        private FuminiHotelManagementContext? _dbContext;
+
+        private static RoomTypeRepository? _instance;
+        private RoomTypeRepository()
+        {
+        }
+        public static RoomTypeRepository GetInstance()
+        {
+            if (RoomTypeRepository._instance == null)
+            {
+                _instance = new RoomTypeRepository();
+            }
+            return RoomTypeRepository._instance;
+        }
 
         public List<RoomType> GetAllRoomTypes()
         {

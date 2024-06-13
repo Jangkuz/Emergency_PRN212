@@ -1,15 +1,24 @@
 ﻿using Repositories.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Repositories
 {
     public class AdminRepository
     {
-        private FuminiHotelManagementContext _dbContext;
+        private FuminiHotelManagementContext? _dbContext;
+
+        private static AdminRepository? _instance;
+        private AdminRepository()
+        {
+        }
+        public static AdminRepository GetInstance()
+        {
+            if (AdminRepository._instance == null)
+            {
+                _instance = new AdminRepository();
+            }
+            return AdminRepository._instance;
+        }
+
         public bool CheckLogin(string email, string password)
         {
             _dbContext = new();
