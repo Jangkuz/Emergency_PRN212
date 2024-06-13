@@ -5,11 +5,11 @@
 			- query data from RoomInfomation
 
 		Login:
-			- Login pass current user (Customer curUser) to Customer screen.
+			- Login pass current user (Customer curUser) to Customer screen.			CHECK ✓
 		
 		Customer screen + method screen:
 			Check curUser ? null:									|	
-				TRUE: MessageBox: Invalid operation, please login	|	==> Reusable function
+				TRUE: MessageBox: Invalid operation, please login	|	==> Reusable function			CHECK ✓
 				FALSE: continue.									|
 				
 
