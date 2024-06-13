@@ -1,16 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AnhdlSE181818WPF.Resources;
+using Repositories.Entities;
+using Services;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace AnhdlSE181818WPF
 {
@@ -19,15 +10,26 @@ namespace AnhdlSE181818WPF
     /// </summary>
     public partial class CustomerMain : Window
     {
+        public Customer? curUser { get; set; } = null;
+
         public CustomerMain()
         {
             InitializeComponent();
+            //For debugging purpose
+            CustomerServices cusService = new CustomerServices();
+            curUser = cusService.CheckLogin("ElizabethTaylor@FUMiniHotel.org", "144@");
+            //For debugging purpose
         }
 
         private void btnManageCustomer_Click(object sender, RoutedEventArgs e)
         {
             System.Windows.Application.Current.Shutdown();
 
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            ResuableEvent.OnWindowLoaded(sender, e, curUser);
         }
     }
 }
