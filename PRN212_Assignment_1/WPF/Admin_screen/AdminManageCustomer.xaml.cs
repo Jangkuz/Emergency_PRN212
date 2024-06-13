@@ -1,20 +1,7 @@
-﻿using AnhdlSE181818WPF.Admin_screen;
-using Repositories.Entities;
+﻿using Repositories.Entities;
 using Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Forms;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace AnhdlSE181818WPF
 {
@@ -30,7 +17,7 @@ namespace AnhdlSE181818WPF
             InitializeComponent();
         }
 
-        private void FillDataGrid()
+        private void FillDataGridCustomer()
         {
             dtgShowCustomer.ItemsSource = null;
             dtgShowCustomer.ItemsSource = _customerServices.GetCustomers();
@@ -39,14 +26,14 @@ namespace AnhdlSE181818WPF
         private void btnBackToAdmin_Click(object sender, RoutedEventArgs e)
         {
             //System.Windows.Application.Current.Shutdown();
-            this.Hide();
+            this.Close();
         }
 
         private void dtgShowCustomer_Loaded(object sender, RoutedEventArgs e)
         {
             //dtgShowCustomer.ItemsSource = null; //clean
             //dtgShowCustomer.ItemsSource = service.GetCustomers();
-            FillDataGrid();
+            FillDataGridCustomer();
         }
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
@@ -75,14 +62,14 @@ namespace AnhdlSE181818WPF
                 return;
             }
             MessageBoxResult answer = System.Windows.MessageBox.Show($"Are you sure that you want to delete {_selected.CustomerFullName}?", "Confirm", MessageBoxButton.YesNo, MessageBoxImage.Question);
-            if(answer == MessageBoxResult.No)
+            if (answer == MessageBoxResult.No)
             {
                 return;
             }
 
-            _customerServices.DeleteCustomerFromUI(_selected);
+            _customerServices.SetCustomerStatusAsDelete(_selected);
 
-            FillDataGrid();
+            FillDataGridCustomer();
 
             _selected = null;
         }
@@ -92,18 +79,18 @@ namespace AnhdlSE181818WPF
             AdminManageCustomerDetail w = new();
             w.ShowDialog();
 
-            FillDataGrid();
+            FillDataGridCustomer();
         }
 
         private void btnUpdate_Click(object sender, RoutedEventArgs e)
         {
-            if(_selected != null)
+            if (_selected != null)
             {
                 AdminManageCustomerDetail w = new();
-                w.SelectedBook = _selected;
+                w.SelectedCustomer = _selected;
 
                 w.ShowDialog();
-                FillDataGrid();
+                FillDataGridCustomer();
             }
             else
             {

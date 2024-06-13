@@ -1,28 +1,19 @@
 ﻿using Repositories.Entities;
 using Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Forms;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace AnhdlSE181818WPF
 {
     /// <summary>
     /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class LoginWindow : Window
     {
-        public Window1()
+        private CustomerServices _cusService = new();
+
+        public LoginWindow()
         {
             InitializeComponent();
         }
@@ -40,12 +31,11 @@ namespace AnhdlSE181818WPF
             {
                 AdminMain adM = new();
                 adM.Show();
-                this.Hide();
+                this.Close();
             }//end admin login
             else
             {
-                CustomerServices cusService = new();
-                Customer? cus = cusService.CheckLogin(txtEmail.Text, txtPassword.Password);
+                Customer? cus = _cusService.CheckLogin(txtEmail.Text, txtPassword.Password);
                 if (cus == null)
                 {
                     System.Windows.Forms.MessageBox.Show("Login failed. Check the email and password again!", "Wrong credentials", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -58,8 +48,9 @@ namespace AnhdlSE181818WPF
                     return;
                 }
                 CustomerMain w = new();
+                w.curUser = cus;
                 w.Show();
-                this.Hide();
+                this.Close();
             }//end customer login
         }
 

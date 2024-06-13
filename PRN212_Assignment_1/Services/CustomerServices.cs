@@ -2,18 +2,18 @@
 using Microsoft.EntityFrameworkCore;
 using Repositories;
 using Repositories.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Services
 {
     public class CustomerServices
     {
         //TODO: add const string for return result
-        private CustomerRepository _repo = new();
+        private CustomerRepository _repo;
+
+        public CustomerServices()
+        {
+            _repo = CustomerRepository.GetInstance();
+        }
 
         public List<Customer> GetCustomers()
         {
@@ -27,11 +27,7 @@ namespace Services
 
         public List<Customer>? SearchByNameAndEmail(string name, string email)
         {
-            return _repo.GetAll().Where(
-                delegate (Customer customer)
-            {
-                return customer.CustomerFullName.ToLower().Contains(name.ToLower()) && customer.EmailAddress.ToLower().Contains(email.ToLower());
-            }).ToList();
+            return _repo.GetAll().Where(c => c.CustomerFullName!.ToLower().Contains(name.ToLower()) && c.EmailAddress.ToLower().Contains(email.ToLower())).ToList();
         }
 
         public bool DeleteCustomerFromUI(Customer customer)
@@ -42,14 +38,25 @@ namespace Services
                 result = true;
             }
             //TODO: try catch
-            return false;
+            return result;
         }
 
+        public bool SetCustomerStatusAsDelete(Customer customer)
+        {
+            var result = false;
+            customer.CustomerStatus = 2;
+            if (_repo.UpdateCustomer(customer) != null)
+            {
+                result = true;
+            }
+            //TODO: try catch
+            return result;
+        }
         public string UpdateCustomerFromUi(Customer customer)
         {
             string result = string.Empty;
             var customerModel = _repo.UpdateCustomer(customer);
-            
+
             if (customerModel == null)
             {
                 result = "Customer id don't exist";
@@ -66,7 +73,7 @@ namespace Services
             string result = string.Empty;
             try
             {
-                
+
                 var cusModel = _repo.CreateCustomer(customer);
                 if (cusModel != null)
                 {
@@ -86,7 +93,7 @@ namespace Services
                     }
                 }
                 result = "An error occurred while adding the book.";
-                return result;  
+                return result;
             }
         }
     }

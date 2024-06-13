@@ -1,0 +1,29 @@
+
+	NOTE:
+		Create report: 
+			- Show data grid, everyday each day is a row
+			- query data from RoomInfomation
+
+		Login:
+			- Login pass current user (Customer curUser) to Customer screen.
+		
+		Customer screen + method screen:
+			Check curUser ? null:									|	
+				TRUE: MessageBox: Invalid operation, please login	|	==> Reusable function
+				FALSE: continue.									|
+				
+
+		Book room: 
+			- Booking back end.
+				=> have booking details.	CHECK ✓
+			- Select room to book
+			- Booking UI
+				- Show data grid, all available room in a certain period i.e: query based on booking details
+					1. Show all room
+					2. Book => dummy data
+					3. Show based on booking details.
+				- 
+
+
+			
+			

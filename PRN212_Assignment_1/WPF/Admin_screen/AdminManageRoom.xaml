@@ -1,17 +1,17 @@
-﻿<Window x:Class="AnhdlSE181818WPF.AdminManageCustomer"
+﻿<Window x:Class="AnhdlSE181818WPF.AdminManageRoom"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="AdminManageCustomer"
+        Title="AdminManageRoom"
         Height="450"
         Width="800"
         Style="{StaticResource MyWindowStyle}">
     <Grid>
         <Label Style="{StaticResource MyLabelStyle}"
-               x:Name="lblManageCustomer"
-               Content="Manage Customer"
+               x:Name="lblManageRoom"
+               Content="Manage Room"
                HorizontalAlignment="Left"
                VerticalAlignment="Top"
                FontWeight="Bold"
@@ -36,13 +36,12 @@
                 Margin="646,105,0,0"
                 VerticalAlignment="Top"
                 Width="134"
-                FontWeight="Bold"
-                Click="btnSearch_Click" />
-        <DataGrid x:Name="dtgShowCustomer"
+                FontWeight="Bold" />
+        <DataGrid x:Name="dtgShowRoom"
                   d:ItemsSource="{d:SampleData ItemCount=5}"
                   Margin="39,163,173,10"
-                  Loaded="dtgShowCustomer_Loaded"
-                  SelectionChanged="dtgShowCustomer_SelectionChanged" />
+                  Loaded="dtgShowRoom_Loaded"
+                  SelectionChanged="dtgShowRoom_SelectionChanged" />
         <Label Style="{StaticResource MyLabelStyle}"
                x:Name="lblSearchName"
                Content="Name"
@@ -103,6 +102,5 @@
                  VerticalAlignment="Top"
                  Width="187"
                  VerticalContentAlignment="Center" />
-
     </Grid>
 </Window>

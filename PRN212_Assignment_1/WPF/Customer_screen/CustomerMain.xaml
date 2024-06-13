@@ -8,13 +8,14 @@
         Title="CustomerMain"
         Height="450"
         Width="800"
-        Style="{StaticResource MyWindowStyle}">
+        Style="{StaticResource MyWindowStyle}"
+        Loaded="Window_Loaded">
     <Grid>
         <!--<Grid.Background>
             <SolidColorBrush Color="Red"
                              Opacity="0.89" />
         </Grid.Background>-->
-        <Label Style="{StaticResource MyLabelStyle}" 
+        <Label Style="{StaticResource MyLabelStyle}"
                x:Name="lblAdmin"
                Content="Customer"
                HorizontalAlignment="Left"
@@ -22,15 +23,15 @@
                FontWeight="Bold"
                FontSize="20"
                Margin="143,33,0,0"
-               Width="535"/>
-        <Button Style="{StaticResource MyButtonStyle}" 
+               Width="535" />
+        <Button Style="{StaticResource MyButtonStyle}"
                 x:Name="btnManageProfile"
-                Content="Manage Profile"
+                Content="Manage profile"
                 HorizontalAlignment="Left"
                 Height="49"
-                Margin="101,151,0,0"
+                Margin="315,151,0,0"
                 VerticalAlignment="Top"
-                Width="270"
+                Width="208"
                 FontWeight="Bold"
                 Click="btnManageCustomer_Click" />
         <Button Style="{StaticResource MyButtonStyle}"
@@ -38,9 +39,9 @@
                 Content="View booking reservation history"
                 HorizontalAlignment="Left"
                 Height="49"
-                Margin="459,151,0,0"
+                Margin="544,151,0,0"
                 VerticalAlignment="Top"
-                Width="270"
+                Width="204"
                 FontWeight="Bold" />
         <Button Style="{StaticResource MyButtonStyle}"
                 x:Name="btnExit"
@@ -50,6 +51,16 @@
                 Margin="621,282,0,0"
                 VerticalAlignment="Top"
                 Width="108"
+                FontWeight="Bold"
+                Click="btnManageCustomer_Click" />
+        <Button Style="{StaticResource MyButtonStyle}"
+                x:Name="btnBookARoom"
+                Content="Book a room"
+                HorizontalAlignment="Left"
+                Height="49"
+                Margin="86,151,0,0"
+                VerticalAlignment="Top"
+                Width="208"
                 FontWeight="Bold"
                 Click="btnManageCustomer_Click" />
     </Grid>

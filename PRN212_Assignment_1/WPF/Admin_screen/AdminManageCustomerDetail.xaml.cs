@@ -1,20 +1,9 @@
 ﻿using Repositories.Entities;
 using Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Services.HelperClass;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
-namespace AnhdlSE181818WPF.Admin_screen
+namespace AnhdlSE181818WPF
 {
     /// <summary>
     /// Interaction logic for AdminManageCustomerDetail.xaml
@@ -26,8 +15,8 @@ namespace AnhdlSE181818WPF.Admin_screen
         private const string updateButton = "Update";
         private const string createButton = "Create";
 
-        CustomerServices _cusServices = new();
-        public Customer SelectedBook { get; set; } = null;
+        private CustomerServices _cusServices = new();
+        public Customer? SelectedCustomer { get; set; } = null;
         public AdminManageCustomerDetail()
         {
             InitializeComponent();
@@ -42,15 +31,15 @@ namespace AnhdlSE181818WPF.Admin_screen
                 CustomerFullName = txtCusFullName.Text,
                 Telephone = txtCusTelephone.Text,
                 EmailAddress = txtCusEmailAddr.Text,
-                CustomerBirthday = dtpCusBirthday.SelectedDate,
+                CustomerBirthday = dtpCusBirthday.SelectedDate.FromDateTimeToDateOnly(),
                 CustomerStatus = byte.Parse(txtCusStatus.Text),
                 Password = txtCusPassword.Text
             };
 
-            if (SelectedBook != null)
+            if (SelectedCustomer != null)
             {
                 //call service to update book
-                customer.CustomerId = int.Parse(txtCusId.Text);
+                customer.CustomerId = SelectedCustomer.CustomerId;
                 message = _cusServices.UpdateCustomerFromUi(customer);
             }
             else
@@ -60,7 +49,7 @@ namespace AnhdlSE181818WPF.Admin_screen
             }
 
 
-            MessageBox.Show(message, "Result", MessageBoxButton.OK,MessageBoxImage.None);
+            MessageBox.Show(message, "Result", MessageBoxButton.OK, MessageBoxImage.None);
 
             this.Close();
         }
@@ -73,23 +62,24 @@ namespace AnhdlSE181818WPF.Admin_screen
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
             //update loading
-            if (SelectedBook != null)
+            if (SelectedCustomer != null)
             {
                 lblCustomerDetail.Content = updateHeader;
                 btnCreateUpdate.Content = updateButton;
-                txtCusId.Text = SelectedBook.CustomerId.ToString();
-                txtCusId.Focusable = false;
-                txtCusFullName.Text = SelectedBook.CustomerFullName;
-                txtCusTelephone.Text = SelectedBook.Telephone;
-                txtCusEmailAddr.Text = SelectedBook.EmailAddress;
+                //txtCusId.Text = SelectedCustomer.CustomerId.ToString();
+                //txtCusId.IsEnabled = false;
+                txtCusFullName.Text = SelectedCustomer.CustomerFullName;
+                txtCusTelephone.Text = SelectedCustomer.Telephone;
+                txtCusEmailAddr.Text = SelectedCustomer.EmailAddress;
                 dtpCusBirthday.SelectedDate
-                    = SelectedBook.CustomerBirthday;
-                txtCusStatus.Text = SelectedBook.CustomerStatus.ToString();
-                txtCusPassword.Text = SelectedBook.Password;
+                    = SelectedCustomer.CustomerBirthday.FromDateOnlyToDateTime();
+                txtCusStatus.Text = SelectedCustomer.CustomerStatus.ToString();
+                txtCusPassword.Text = SelectedCustomer.Password;
             }
             else
             {//create lodaing
                 lblCustomerDetail.Content = createHeader;
+                //txtCusId.Focusable = false;
             }
         }
 
