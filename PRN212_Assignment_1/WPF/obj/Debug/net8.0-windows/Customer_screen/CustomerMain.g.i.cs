@@ -93,7 +93,7 @@ namespace AnhdlSE181818WPF {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/AnhdlSE181818WPF;component/customer_screen/customermain.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/AnhdlSE181818WPF;V1.0.0.0;component/customer_screen/customermain.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Customer_screen\CustomerMain.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
