@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "D:\\FPTU\\2024_2_Summer\\PRN_211_Subject\\Assignment\\99_Assingment_1\\PRN212_Assignment_1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{962B20BF-753A-482B-8179-3C4056143777}|WPF\\AnhdlSE181818WPF.csproj|d:\\fptu\\2024_2_summer\\prn_211_subject\\assignment\\99_assingment_1\\prn212_assignment_1\\wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{962B20BF-753A-482B-8179-3C4056143777}|WPF\\AnhdlSE181818WPF.csproj|solutionrelative:wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{962B20BF-753A-482B-8179-3C4056143777}|WPF\\AnhdlSE181818WPF.csproj|d:\\fptu\\2024_2_summer\\prn_211_subject\\assignment\\99_assingment_1\\prn212_assignment_1\\wpf\\admin_screen\\adminmanageroomdetail.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{962B20BF-753A-482B-8179-3C4056143777}|WPF\\AnhdlSE181818WPF.csproj|solutionrelative:wpf\\admin_screen\\adminmanageroomdetail.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{962B20BF-753A-482B-8179-3C4056143777}|WPF\\AnhdlSE181818WPF.csproj|D:\\FPTU\\2024_2_Summer\\PRN_211_Subject\\Assignment\\99_Assingment_1\\PRN212_Assignment_1\\wpf\\admin_screen\\adminmanageroomdetail.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{962B20BF-753A-482B-8179-3C4056143777}|WPF\\AnhdlSE181818WPF.csproj|solutionrelative:wpf\\admin_screen\\adminmanageroomdetail.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{962B20BF-753A-482B-8179-3C4056143777}|WPF\\AnhdlSE181818WPF.csproj|D:\\FPTU\\2024_2_Summer\\PRN_211_Subject\\Assignment\\99_Assingment_1\\PRN212_Assignment_1\\wpf\\admin_screen\\adminmanagecustomerdetail.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{962B20BF-753A-482B-8179-3C4056143777}|WPF\\AnhdlSE181818WPF.csproj|solutionrelative:wpf\\admin_screen\\adminmanagecustomerdetail.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -25,16 +33,43 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "App.xaml",
-              "DocumentMoniker": "D:\\FPTU\\2024_2_Summer\\PRN_211_Subject\\Assignment\\99_Assingment_1\\PRN212_Assignment_1\\WPF\\App.xaml",
-              "RelativeDocumentMoniker": "WPF\\App.xaml",
-              "ToolTip": "D:\\FPTU\\2024_2_Summer\\PRN_211_Subject\\Assignment\\99_Assingment_1\\PRN212_Assignment_1\\WPF\\App.xaml",
-              "RelativeToolTip": "WPF\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-13T21:17:18.89Z",
+              "Title": "AdminManageRoomDetail.xaml.cs",
+              "DocumentMoniker": "D:\\FPTU\\2024_2_Summer\\PRN_211_Subject\\Assignment\\99_Assingment_1\\PRN212_Assignment_1\\WPF\\Admin_screen\\AdminManageRoomDetail.xaml.cs",
+              "RelativeDocumentMoniker": "WPF\\Admin_screen\\AdminManageRoomDetail.xaml.cs",
+              "ToolTip": "D:\\FPTU\\2024_2_Summer\\PRN_211_Subject\\Assignment\\99_Assingment_1\\PRN212_Assignment_1\\WPF\\Admin_screen\\AdminManageRoomDetail.xaml.cs",
+              "RelativeToolTip": "WPF\\Admin_screen\\AdminManageRoomDetail.xaml.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAwwDwAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T03:36:44.339Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminManageRoomDetail.xaml",
+              "DocumentMoniker": "D:\\FPTU\\2024_2_Summer\\PRN_211_Subject\\Assignment\\99_Assingment_1\\PRN212_Assignment_1\\WPF\\Admin_screen\\AdminManageRoomDetail.xaml",
+              "RelativeDocumentMoniker": "WPF\\Admin_screen\\AdminManageRoomDetail.xaml",
+              "ToolTip": "D:\\FPTU\\2024_2_Summer\\PRN_211_Subject\\Assignment\\99_Assingment_1\\PRN212_Assignment_1\\WPF\\Admin_screen\\AdminManageRoomDetail.xaml",
+              "RelativeToolTip": "WPF\\Admin_screen\\AdminManageRoomDetail.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-25T03:36:39.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminManageCustomerDetail.xaml",
+              "DocumentMoniker": "D:\\FPTU\\2024_2_Summer\\PRN_211_Subject\\Assignment\\99_Assingment_1\\PRN212_Assignment_1\\WPF\\Admin_screen\\AdminManageCustomerDetail.xaml",
+              "RelativeDocumentMoniker": "WPF\\Admin_screen\\AdminManageCustomerDetail.xaml",
+              "ToolTip": "D:\\FPTU\\2024_2_Summer\\PRN_211_Subject\\Assignment\\99_Assingment_1\\PRN212_Assignment_1\\WPF\\Admin_screen\\AdminManageCustomerDetail.xaml",
+              "RelativeToolTip": "WPF\\Admin_screen\\AdminManageCustomerDetail.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-25T03:36:34.908Z"
             }
           ]
         }

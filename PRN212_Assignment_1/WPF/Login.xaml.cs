@@ -1,7 +1,6 @@
 ﻿using Repositories.Entities;
 using Services;
 using System.Windows;
-using System.Windows.Forms;
 using System.Windows.Input;
 
 namespace AnhdlSE181818WPF
@@ -23,7 +22,7 @@ namespace AnhdlSE181818WPF
             //validation
             if (string.IsNullOrEmpty(txtEmail.Text) || string.IsNullOrEmpty(txtPassword.Password))
             {
-                System.Windows.Forms.MessageBox.Show("Pleae input both email & password", "Input plz.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Pleae input both email & password", "Input plz.", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
             AdminService adminSer = new();
@@ -38,17 +37,17 @@ namespace AnhdlSE181818WPF
                 Customer? cus = _cusService.CheckLogin(txtEmail.Text, txtPassword.Password);
                 if (cus == null)
                 {
-                    System.Windows.Forms.MessageBox.Show("Login failed. Check the email and password again!", "Wrong credentials", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Login failed. Check the email and password again!", "Wrong credentials", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
 
                 if (cus.CustomerStatus != 1)
                 {
-                    System.Windows.Forms.MessageBox.Show("You have no permission to access this function!", "Wrong privilege", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   MessageBox.Show("You have no permission to access this function!", "Wrong privilege", MessageBoxButton.OK, MessageBoxImage.Information);
                     return;
                 }
                 CustomerMain w = new();
-                w.curUser = cus;
+                w.CurUser = cus;
                 w.Show();
                 this.Close();
             }//end customer login

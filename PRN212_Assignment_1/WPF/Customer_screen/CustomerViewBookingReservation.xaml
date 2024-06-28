@@ -5,8 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AnhdlSE181818WPF.Customer_screen"
         mc:Ignorable="d"
-        Title="CustomerViewBookingReservation" Height="450" Width="800">
+        Title="CustomerViewBookingReservation"
+        Height="450"
+        Width="800"
+        Style="{StaticResource MyWindowStyle}"
+        Loaded="Window_Loaded">
     <Grid>
-        
+        <Label x:Name="lblReservationHistory"
+               Style="{StaticResource MyLabelStyle}"
+               Content="Reservation history"
+               HorizontalAlignment="Center"
+               Margin="0,10,0,0"
+               VerticalAlignment="Top"
+               FontWeight="Bold"
+               Height="46"
+               Width="466"
+               FontSize="20" />
+        <Button Style="{StaticResource MyButtonStyle}"
+                x:Name="btnBack"
+                Content="Back"
+                HorizontalAlignment="Left"
+                Height="23"
+                Margin="20,40,0,0"
+                VerticalAlignment="Top"
+                Width="63"
+                FontWeight="Bold"
+                Click="btnBack_Click" />
+        <DataGrid x:Name="dtgShowReservation"
+                  d:ItemsSource="{d:SampleData ItemCount=5}"
+                  Margin="10,85,10,10"
+                  Loaded="dtgShowReservation_Loaded"/>
+
     </Grid>
 </Window>

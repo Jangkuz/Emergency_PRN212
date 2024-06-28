@@ -8,7 +8,8 @@
         Title="CustomerBookRoom"
         Height="450"
         Width="800"
-        Style="{StaticResource MyWindowStyle}">
+        Style="{StaticResource MyWindowStyle}"
+        Loaded="Window_Loaded">
     <Grid>
         <Label x:Name="lblBookRoom"
                Style="{StaticResource MyLabelStyle}"
@@ -20,9 +21,9 @@
                Height="46"
                Width="466"
                FontSize="20" />
-        <Label x:Name="lblCusBirthday"
+        <Label x:Name="lblReserationEndDate"
                Style="{StaticResource ResourceKey=MyLabelStyle}"
-               Content="Day of birth"
+               Content="End date"
                HorizontalAlignment="Left"
                Margin="432,86,0,0"
                VerticalAlignment="Top"
@@ -30,7 +31,7 @@
                Height="34"
                Width="118"
                FontSize="14" />
-        <DatePicker x:Name="dtpCusBirthday"
+        <DatePicker x:Name="dtpReserationEndDate"
                     HorizontalAlignment="Left"
                     Margin="573,82,0,0"
                     VerticalAlignment="Top"
@@ -38,9 +39,9 @@
                     Width="178"
                     HorizontalContentAlignment="Stretch"
                     VerticalContentAlignment="Center" />
-        <Label x:Name="lblCusBirthday_Copy"
+        <Label x:Name="lblReserationStartDate"
                Style="{StaticResource ResourceKey=MyLabelStyle}"
-               Content="Day of birth"
+               Content="Start date"
                HorizontalAlignment="Left"
                Margin="28,86,0,0"
                VerticalAlignment="Top"
@@ -48,7 +49,7 @@
                Height="34"
                Width="118"
                FontSize="14" />
-        <DatePicker x:Name="dtpCusBirthday_Copy"
+        <DatePicker x:Name="dtpReserationStartDate"
                     HorizontalAlignment="Left"
                     Margin="165,86,0,0"
                     VerticalAlignment="Top"
@@ -75,18 +76,21 @@
                 VerticalAlignment="Top"
                 Width="134"
                 FontWeight="Bold"/>
-        <DataGrid x:Name="dtgShowCustomer"
+        <DataGrid x:Name="dtgShowRoom"
                   d:ItemsSource="{d:SampleData ItemCount=5}"
-                  Margin="39,163,173,10"/>
+                  Margin="39,163,173,10"
+                  Loaded="dtgShowRoom_Loaded"
+                  SelectionChanged="dtgShowRoom_SelectionChanged" />
         <Button Style="{StaticResource MyButtonStyle}"
-                x:Name="btnCreate"
-                Content="Create"
+                x:Name="btnBook"
+                Content="Book"
                 HorizontalAlignment="Left"
                 Height="42"
                 Margin="646,206,0,0"
                 VerticalAlignment="Top"
                 Width="134"
-                FontWeight="Bold"/>
+                FontWeight="Bold"
+                Click="btnBook_Click" />
 
     </Grid>
 </Window>

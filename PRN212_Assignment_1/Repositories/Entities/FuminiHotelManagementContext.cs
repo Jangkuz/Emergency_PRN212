@@ -24,8 +24,6 @@ public partial class FuminiHotelManagementContext : DbContext
 
     public virtual DbSet<RoomType> RoomTypes { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    => optionsBuilder.UseSqlServer(GetConnectionString());
 
     public AdminConfig Admin { get; set; } = GetAdminConfig();
 
@@ -42,6 +40,8 @@ public partial class FuminiHotelManagementContext : DbContext
         return adminConfig;
     }
 
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    => optionsBuilder.UseSqlServer(GetConnectionString());
     private string? GetConnectionString()
     {
         IConfiguration configuration = new ConfigurationBuilder()
@@ -74,10 +74,12 @@ public partial class FuminiHotelManagementContext : DbContext
 
         modelBuilder.Entity<BookingReservation>(entity =>
         {
+            entity.HasKey(e => e.BookingReservationId);
+            //entity.HasIndex(e => e.BookingReservationId).IsUnique();
             entity.ToTable("BookingReservation");
-
             entity.Property(e => e.BookingReservationId)
-                .ValueGeneratedNever()
+                //.UseIdentityColumn()
+                //.ValueGeneratedNever()
                 .HasColumnName("BookingReservationID");
             entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
             entity.Property(e => e.TotalPrice).HasColumnType("money");

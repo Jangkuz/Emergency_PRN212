@@ -19,6 +19,17 @@ namespace Repositories
             return BookingReservationRepository._instance;
         }
 
+        public List<BookingReservation>? GetCustomerReservation(Customer cus)
+        {
+            _dbContext = new();
+            var temp = _dbContext.BookingReservations.Where(bk => bk.CustomerId == cus.CustomerId);
+            if(temp == null)
+            {
+                return null;
+            }
+            return temp.ToList();   
+        }
+
         public List<BookingReservation> GetAllBookingReservations()
         {
             _dbContext = new();
@@ -34,7 +45,15 @@ namespace Repositories
         public BookingReservation? AddBookingReservation(BookingReservation bookingReservation)
         {
             _dbContext = new();
-            _dbContext.BookingReservations.Add(bookingReservation);
+            _dbContext!.BookingReservations.Add(bookingReservation);
+            _dbContext.SaveChanges();
+            return GetReservationById(bookingReservation.BookingReservationId);
+        }
+
+        public BookingReservation? UpdateBookingReservation(BookingReservation bookingReservation)
+        {
+            _dbContext = new();
+            _dbContext.BookingReservations.Update(bookingReservation);
             _dbContext.SaveChanges();
             return GetReservationById(bookingReservation.BookingReservationId);
         }

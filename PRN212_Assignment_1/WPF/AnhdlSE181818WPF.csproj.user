@@ -25,6 +25,9 @@
     <Compile Update="Admin_screen\AdminManageRoomDetail.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Customer_screen\asadasa.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Customer_screen\CustomerBookRoom.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -58,6 +61,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Admin_screen\AdminManageRoomDetail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Customer_screen\asadasa.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Customer_screen\CustomerBookRoom.xaml">

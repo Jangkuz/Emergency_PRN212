@@ -1,6 +1,4 @@
-﻿using AnhdlSE181818WPF;
-
-namespace WPF
+﻿namespace WPF
 {
     /// <summary>
     /// Interaction logic for App.xaml

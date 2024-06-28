@@ -42,7 +42,8 @@
                 Margin="544,151,0,0"
                 VerticalAlignment="Top"
                 Width="204"
-                FontWeight="Bold" />
+                FontWeight="Bold"
+                Click="btnViewBooking_Click" />
         <Button Style="{StaticResource MyButtonStyle}"
                 x:Name="btnExit"
                 Content="Exit"
@@ -52,7 +53,7 @@
                 VerticalAlignment="Top"
                 Width="108"
                 FontWeight="Bold"
-                Click="btnManageCustomer_Click" />
+                Click="btnExit_Click" />
         <Button Style="{StaticResource MyButtonStyle}"
                 x:Name="btnBookARoom"
                 Content="Book a room"
@@ -62,6 +63,7 @@
                 VerticalAlignment="Top"
                 Width="208"
                 FontWeight="Bold"
-                Click="btnManageCustomer_Click" />
+                Click="btnBookARoom_Click"
+                Visibility="Hidden" />
     </Grid>
 </Window>

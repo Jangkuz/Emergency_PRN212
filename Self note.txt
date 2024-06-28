@@ -18,7 +18,7 @@
 				=> have booking details.	CHECK ✓
 			- Select room to book
 			- Booking UI
-				- Show data grid, all available room in a certain period i.e: query based on booking details
+				- Show data grid, all available room in a certain period i.e: query based on booking details		=> might not have enough time for this function.
 					1. Show all room
 					2. Book => dummy data
 					3. Show based on booking details.

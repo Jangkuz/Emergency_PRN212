@@ -41,7 +41,8 @@
                   d:ItemsSource="{d:SampleData ItemCount=5}"
                   Margin="39,163,173,10"
                   Loaded="dtgShowRoom_Loaded"
-                  SelectionChanged="dtgShowRoom_SelectionChanged" />
+                  SelectionChanged="dtgShowRoom_SelectionChanged"
+                  SelectionMode="Single" />
         <Label Style="{StaticResource MyLabelStyle}"
                x:Name="lblSearchName"
                Content="Name"

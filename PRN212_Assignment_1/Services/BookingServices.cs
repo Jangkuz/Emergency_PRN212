@@ -1,5 +1,7 @@
 ﻿using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using Repositories;
+using Repositories.DTOs;
 using Repositories.Entities;
 
 namespace Services
@@ -21,49 +23,78 @@ namespace Services
             return _bookingReservationRepo.GetAllBookingReservations();
         }
 
-        public string BookRoomFromUI()
+        public List<BookingReservation>? GetReservationBasedOnCustomer(Customer cus)
+        {
+            return _bookingReservationRepo.GetCustomerReservation(cus);
+        }
+
+        public string BookRoomFromUI(Customer curCus, List<RoomInformation> roomsInfos, DateOnly startDate, DateOnly endDate)
         {
             string message = "Booking unsuccessful";
             //1. make BookingReservation
-            List<int> dummyRoomIds = new() { 6900, 5900 };
-            var dummyStartDate = DateOnly.FromDateTime(DateTime.Now);
-            var dummyEndDate = DateOnly.FromDateTime(DateTime.Now);
+            //List<int> dummyRoomIds = new() { 6900, 5900 };
+            //var dummyStartDate = DateOnly.FromDateTime(DateTime.Now);
+            //var dummyEndDate = DateOnly.FromDateTime(DateTime.Now);
             try
             {
-                var dummyCustomer = new Customer();
-                var dummyBookingReservation = new BookingReservation()
+                //var dummyCustomer = new Customer();
+                var bookingReservation = new BookingReservation()
                 {
                     //set attribute of dummyBookingReservation
                     BookingDate = DateOnly.FromDateTime(DateTime.Now),
-                    CustomerId = dummyCustomer.CustomerId,
+                    CustomerId = curCus.CustomerId,
                     BookingStatus = 1,
                 };
+                _bookingReservationRepo.AddBookingReservation(bookingReservation);
 
                 //2. make BookingDetail
-                var dummyBookingDetails = dummyRoomIds.Select(roomId => new BookingDetail()
+                var dummyBookingDetails = roomsInfos.Select(room => new BookingDetail()
                 {
-                    RoomId = roomId,
-                    StartDate = dummyStartDate,
-                    EndDate = dummyEndDate,
-                    ActualPrice = _roomInformationRepo.GetRoomById(roomId)!.RoomPricePerDay,
+                    RoomId = room.RoomId,
+                    StartDate = startDate,
+                    EndDate = endDate,
+                    ActualPrice = room.RoomPricePerDay,
                 }).ToList();
 
-                dummyBookingReservation.BookingDetails = dummyBookingDetails;
+                bookingReservation.BookingDetails = dummyBookingDetails;
 
                 //3. update BookingReservation.TotalPrice.
-                dummyBookingReservation.TotalPrice = dummyBookingReservation.BookingDetails.Sum(d => d.ActualPrice * (d.EndDate.DayNumber - d.StartDate.DayNumber));
-                _bookingReservationRepo.AddBookingReservation(dummyBookingReservation);
+                bookingReservation.TotalPrice = bookingReservation.BookingDetails.Sum(d => d.ActualPrice * (d.EndDate.DayNumber - d.StartDate.DayNumber));
+                _bookingReservationRepo.UpdateBookingReservation(bookingReservation);
 
                 message = "Booking successful!";
             }
             catch (NullReferenceException ex)
             {
-                Console.WriteLine("BookingServices_BookRoomFromUI " + ex.Message);
-            } catch(SqlException ex)
+                Console.WriteLine("BookingServices_BookRoomFromUI_NullReferenceException" + ex.Message);
+                message += "\nBookingServices_BookRoomFromUI_NullReferenceException" + ex.Message;
+            }
+            catch (SqlException ex)
             {
-                Console.WriteLine("BookingServices_BookRoomFromUI " + ex.Message);
+                Console.WriteLine("BookingServices_BookRoomFromUI_SqlException" + ex.Message);
+                message += "\nBookingServices_BookRoomFromUI_SqlException" + ex.Message;
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("BookingServices_BookRoomFromUI_GeneralException"+ex.Message);
+                message += "\nBookingServices_BookRoomFromUI_GeneralException" + ex.Message;
             }
             return message;
+        }
+
+        public  IQueryable<DailyRevenue> GetDailyRevenue()
+        {
+            var dailyRevenue = _bookingDetailRepo.GetAllBookingDetails()
+                .GroupBy(br => br.StartDate)
+                .Select(g => new DailyRevenue
+                {
+                    Date = g.Key,
+                    TotalRevenue = g.Sum(br => br.ActualPrice ?? 0)
+                })
+                .OrderByDescending(dr => dr.TotalRevenue)
+                .ToList();
+
+            return dailyRevenue.AsQueryable();
         }
     }
 }

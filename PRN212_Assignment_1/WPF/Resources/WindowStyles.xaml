@@ -8,7 +8,7 @@
         <Setter Property="ResizeMode"
                 Value="NoResize" />
         <Setter Property="Background"
-                Value="Red" />
+                Value="IndianRed" />
         <Setter Property="Foreground"
                 Value="Yellow" />
     </Style>

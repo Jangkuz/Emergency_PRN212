@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Services.HelperClass
+﻿namespace Services.HelperClass
 {
     public static class DateHelper
     {
@@ -18,6 +12,8 @@ namespace Services.HelperClass
             return null;
         }
 
+
+
         // Convert DateTime? to DateOnly?
         public static DateOnly? FromDateTimeToDateOnly(this DateTime? dateTime)
         {
@@ -27,5 +23,11 @@ namespace Services.HelperClass
             }
             return null;
         }
+
+        //public static DateOnly FromDateTimeToDateOnly(this DateTime dateTime)
+        //{
+            
+        //        return DateOnly.FromDateTime(dateTime);
+        //}
     }
 }

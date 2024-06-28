@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using Services;
+using System.Windows;
 
 namespace AnhdlSE181818WPF
 {
@@ -7,6 +8,7 @@ namespace AnhdlSE181818WPF
     /// </summary>
     public partial class AdminCreateReport : Window
     {
+        private BookingServices _bookingServices = new();
         public AdminCreateReport()
         {
             InitializeComponent();
@@ -14,8 +16,14 @@ namespace AnhdlSE181818WPF
 
         private void btnBackToAdmin_Click(object sender, RoutedEventArgs e)
         {
-                //System.Windows.Application.Current.Shutdown();
-                this.Close();
+            //System.Windows.Application.Current.Shutdown();
+            this.Close();
+        }
+
+        private void dtgShowReport_Loaded(object sender, RoutedEventArgs e)
+        {
+            dtgShowReport.ItemsSource = null;
+            dtgShowReport.ItemsSource = _bookingServices.GetDailyRevenue();
         }
     }
 }
