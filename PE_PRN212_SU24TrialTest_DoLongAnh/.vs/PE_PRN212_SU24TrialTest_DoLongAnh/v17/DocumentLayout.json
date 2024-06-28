@@ -1,0 +1,97 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\FPTU\\2024_2_Summer\\PRN_211_Subject\\Assignment\\7_Trial_PE\\Day13\\PE_PRN212_SU24TrialTest_DoLongAnh\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C89E5-DB50-4BAF-A7BE-4800C442CEE9}|PE_PRN212_SU24TrialTest_DoLongAnh.WPF\\PE_PRN212_SU24TrialTest_DoLongAnh.WPF.csproj|D:\\FPTU\\2024_2_Summer\\PRN_211_Subject\\Assignment\\7_Trial_PE\\Day13\\PE_PRN212_SU24TrialTest_DoLongAnh\\pe_prn212_su24trialtest_dolonganh.wpf\\createupdateairconditioner.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{D64C89E5-DB50-4BAF-A7BE-4800C442CEE9}|PE_PRN212_SU24TrialTest_DoLongAnh.WPF\\PE_PRN212_SU24TrialTest_DoLongAnh.WPF.csproj|solutionrelative:pe_prn212_su24trialtest_dolonganh.wpf\\createupdateairconditioner.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C89E5-DB50-4BAF-A7BE-4800C442CEE9}|PE_PRN212_SU24TrialTest_DoLongAnh.WPF\\PE_PRN212_SU24TrialTest_DoLongAnh.WPF.csproj|d:\\fptu\\2024_2_summer\\prn_211_subject\\assignment\\7_trial_pe\\day13\\pe_prn212_su24trialtest_dolonganh\\pe_prn212_su24trialtest_dolonganh.wpf\\createupdateairconditioner.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D64C89E5-DB50-4BAF-A7BE-4800C442CEE9}|PE_PRN212_SU24TrialTest_DoLongAnh.WPF\\PE_PRN212_SU24TrialTest_DoLongAnh.WPF.csproj|solutionrelative:pe_prn212_su24trialtest_dolonganh.wpf\\createupdateairconditioner.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BFAAFA8-78A1-4022-92B2-977A570BABB5}|PE_PRN212_SU24TrialTest_DoLongAnh.Repo\\PE_PRN212_SU24TrialTest_DoLongAnh.Repo.csproj|D:\\FPTU\\2024_2_Summer\\PRN_211_Subject\\Assignment\\7_Trial_PE\\Day13\\PE_PRN212_SU24TrialTest_DoLongAnh\\pe_prn212_su24trialtest_dolonganh.repo\\entities\\airconditioner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BFAAFA8-78A1-4022-92B2-977A570BABB5}|PE_PRN212_SU24TrialTest_DoLongAnh.Repo\\PE_PRN212_SU24TrialTest_DoLongAnh.Repo.csproj|solutionrelative:pe_prn212_su24trialtest_dolonganh.repo\\entities\\airconditioner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C89E5-DB50-4BAF-A7BE-4800C442CEE9}|PE_PRN212_SU24TrialTest_DoLongAnh.WPF\\PE_PRN212_SU24TrialTest_DoLongAnh.WPF.csproj|D:\\FPTU\\2024_2_Summer\\PRN_211_Subject\\Assignment\\7_Trial_PE\\Day13\\PE_PRN212_SU24TrialTest_DoLongAnh\\pe_prn212_su24trialtest_dolonganh.wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D64C89E5-DB50-4BAF-A7BE-4800C442CEE9}|PE_PRN212_SU24TrialTest_DoLongAnh.WPF\\PE_PRN212_SU24TrialTest_DoLongAnh.WPF.csproj|solutionrelative:pe_prn212_su24trialtest_dolonganh.wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AirConditioner.cs",
+              "DocumentMoniker": "D:\\FPTU\\2024_2_Summer\\PRN_211_Subject\\Assignment\\7_Trial_PE\\Day13\\PE_PRN212_SU24TrialTest_DoLongAnh\\PE_PRN212_SU24TrialTest_DoLongAnh.Repo\\Entities\\AirConditioner.cs",
+              "RelativeDocumentMoniker": "PE_PRN212_SU24TrialTest_DoLongAnh.Repo\\Entities\\AirConditioner.cs",
+              "ToolTip": "D:\\FPTU\\2024_2_Summer\\PRN_211_Subject\\Assignment\\7_Trial_PE\\Day13\\PE_PRN212_SU24TrialTest_DoLongAnh\\PE_PRN212_SU24TrialTest_DoLongAnh.Repo\\Entities\\AirConditioner.cs",
+              "RelativeToolTip": "PE_PRN212_SU24TrialTest_DoLongAnh.Repo\\Entities\\AirConditioner.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBUAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T15:00:36.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\FPTU\\2024_2_Summer\\PRN_211_Subject\\Assignment\\7_Trial_PE\\Day13\\PE_PRN212_SU24TrialTest_DoLongAnh\\PE_PRN212_SU24TrialTest_DoLongAnh.WPF\\App.xaml",
+              "RelativeDocumentMoniker": "PE_PRN212_SU24TrialTest_DoLongAnh.WPF\\App.xaml",
+              "ToolTip": "D:\\FPTU\\2024_2_Summer\\PRN_211_Subject\\Assignment\\7_Trial_PE\\Day13\\PE_PRN212_SU24TrialTest_DoLongAnh\\PE_PRN212_SU24TrialTest_DoLongAnh.WPF\\App.xaml",
+              "RelativeToolTip": "PE_PRN212_SU24TrialTest_DoLongAnh.WPF\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-25T14:34:26.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateUpdateAirConditioner.xaml.cs",
+              "DocumentMoniker": "D:\\FPTU\\2024_2_Summer\\PRN_211_Subject\\Assignment\\7_Trial_PE\\Day13\\PE_PRN212_SU24TrialTest_DoLongAnh\\PE_PRN212_SU24TrialTest_DoLongAnh.WPF\\CreateUpdateAirConditioner.xaml.cs",
+              "RelativeDocumentMoniker": "PE_PRN212_SU24TrialTest_DoLongAnh.WPF\\CreateUpdateAirConditioner.xaml.cs",
+              "ToolTip": "D:\\FPTU\\2024_2_Summer\\PRN_211_Subject\\Assignment\\7_Trial_PE\\Day13\\PE_PRN212_SU24TrialTest_DoLongAnh\\PE_PRN212_SU24TrialTest_DoLongAnh.WPF\\CreateUpdateAirConditioner.xaml.cs",
+              "RelativeToolTip": "PE_PRN212_SU24TrialTest_DoLongAnh.WPF\\CreateUpdateAirConditioner.xaml.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAWwHUAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T14:09:42.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateUpdateAirConditioner.xaml",
+              "DocumentMoniker": "D:\\FPTU\\2024_2_Summer\\PRN_211_Subject\\Assignment\\7_Trial_PE\\Day13\\PE_PRN212_SU24TrialTest_DoLongAnh\\PE_PRN212_SU24TrialTest_DoLongAnh.WPF\\CreateUpdateAirConditioner.xaml",
+              "RelativeDocumentMoniker": "PE_PRN212_SU24TrialTest_DoLongAnh.WPF\\CreateUpdateAirConditioner.xaml",
+              "ToolTip": "D:\\FPTU\\2024_2_Summer\\PRN_211_Subject\\Assignment\\7_Trial_PE\\Day13\\PE_PRN212_SU24TrialTest_DoLongAnh\\PE_PRN212_SU24TrialTest_DoLongAnh.WPF\\CreateUpdateAirConditioner.xaml",
+              "RelativeToolTip": "PE_PRN212_SU24TrialTest_DoLongAnh.WPF\\CreateUpdateAirConditioner.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-25T04:12:33.331Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

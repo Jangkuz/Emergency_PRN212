@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PE_PRN212_SU24TrialTest_DoLongAnh.WPF", "PE_PRN212_SU24TrialTest_DoLongAnh.WPF\PE_PRN212_SU24TrialTest_DoLongAnh.WPF.csproj", "{D64C89E5-DB50-4BAF-A7BE-4800C442CEE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PE_PRN212_SU24TrialTest_DoLongAnh.Repo", "PE_PRN212_SU24TrialTest_DoLongAnh.Repo\PE_PRN212_SU24TrialTest_DoLongAnh.Repo.csproj", "{6BFAAFA8-78A1-4022-92B2-977A570BABB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D64C89E5-DB50-4BAF-A7BE-4800C442CEE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D64C89E5-DB50-4BAF-A7BE-4800C442CEE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D64C89E5-DB50-4BAF-A7BE-4800C442CEE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D64C89E5-DB50-4BAF-A7BE-4800C442CEE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BFAAFA8-78A1-4022-92B2-977A570BABB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BFAAFA8-78A1-4022-92B2-977A570BABB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BFAAFA8-78A1-4022-92B2-977A570BABB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BFAAFA8-78A1-4022-92B2-977A570BABB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02E44576-0F97-4E7F-8C1C-F43305644122}
+	EndGlobalSection
+EndGlobal
